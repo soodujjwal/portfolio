@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "target": "portfolio",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "**/*.md"
+    ]
+  }
+}

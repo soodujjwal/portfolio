@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ujjwal Sood | Software Engineer</title>
+<meta name="description" content="Portfolio of Ujjwal Sood — Computer Science student at UT Arlington building full-stack and AI-powered applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">US<span class="dot">.</span></a>
+  </div>
+</header>
+
+<nav class="dock" id="dock" aria-label="Section navigation">
+  <div class="dock-glow" id="dock-glow"></div>
+  <a href="#home" class="dock-link active" data-section="home">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+    <span>Home</span>
+  </a>
+  <a href="#about" class="dock-link" data-section="about">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg>
+    <span>About</span>
+  </a>
+  <a href="#github" class="dock-link" data-section="github">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.48 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.81 0 .27.18.59.69.48A10.02 10.02 0 0 0 22 12.26C22 6.58 17.52 2 12 2z"/></svg>
+    <span>GitHub</span>
+  </a>
+  <a href="#projects" class="dock-link" data-section="projects">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg>
+    <span>Projects</span>
+  </a>
+  <a href="#experience" class="dock-link" data-section="experience">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+    <span>Experience</span>
+  </a>
+  <a href="#education" class="dock-link" data-section="education">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M5 10v5c0 1.5 3 3 7 3s7-1.5 7-3v-5"/></svg>
+    <span>Education</span>
+  </a>
+  <a href="#involvement" class="dock-link" data-section="involvement">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 21c0-3.5 2.7-6 6-6s6 2.5 6 6"/><path d="M14.5 14.2c2.3.4 4.5 2.2 4.5 5.8"/></svg>
+    <span>Involvement</span>
+  </a>
+  <a href="#skills" class="dock-link" data-section="skills">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.5 5 5.5.8-4 4 1 5.4L12 14.8 7 17.2l1-5.4-4-4 5.5-.8z"/></svg>
+    <span>Skills</span>
+  </a>
+  <a href="#contact" class="dock-link" data-section="contact">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6l9 7 9-7"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+    <span>Contact</span>
+  </a>
+</nav>
+
+<main>
+
+  <section id="home" class="hero">
+    <canvas id="globe-canvas" class="globe-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Ujjwal Sood</h1>
+      <h2 class="role">Full-Stack &amp; AI/ML Software Engineer</h2>
+      <p class="hero-sub">Computer Science student at UT Arlington building full-stack platforms and AI-powered tools — from health-data analysis to touchless computer control.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/Ujjwal_Sood.pdf" class="btn btn-outline" target="_blank" rel="noopener">Download Resume</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/soodujjwal" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="mailto:ujjwalsood96@gmail.com" aria-label="Email">Email</a>
+        <a href="https://www.linkedin.com/in/ujjwal-sood-4b608022b/" id="linkedin-link" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+    <div class="scroll-cue">scroll</div>
+  </section>
+
+  <section id="about" class="section">
+    <p class="section-tag">01 / About</p>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a Computer Science student at the <strong>University of Texas at Arlington</strong> (BS, expected Dec 2026),
+        focused on shipping real, working software, full-stack web apps, computer-vision tools, and applied AI systems.
+        I like working across the stack: designing APIs, building responsive UIs, and wiring up the AI/ML layer that makes a
+        product feel smart. Outside of coursework, I work as a Full-Stack Developer for UT Arlington Parking &amp; Transportation Services,
+        and I'm active in Students in Computing and Artificial Intelligence, where I've presented project demos to 50+ students and faculty.
+      </p>
+    </div>
+  </section>
+
+  <section id="github" class="section">
+    <p class="section-tag">02 / Live Activity</p>
+    <h2 class="section-title">GitHub Activity</h2>
+    <p class="about-text" style="margin-bottom: 28px;">Refreshed automatically every day, straight from GitHub.</p>
+    <div id="github-calendar" class="github-graph"></div>
+  </section>
+
+  <section id="projects" class="section">
+    <p class="section-tag">03 / Work</p>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+
+      <article class="project-card featured">
+        <div class="project-head">
+          <h3>AI Interviewer</h3>
+          <span class="badge badge-live">Public</span>
+        </div>
+        <p class="project-desc">A full-stack AI mock-interview platform that generates personalized, role-specific interview questions in real time using a locally served LLM, with a speech-to-speech interview experience.</p>
+        <p class="project-status">Code and architecture are public, with a hosted live demo available.</p>
+        <ul class="project-points">
+          <li>Delivers real-time, role-specific mock interview questions with sub-500ms speech-to-speech responses from a self-hosted LLM</li>
+          <li>Built a resume ingestion/retrieval pipeline (PDF parsing) and a Gemini API data pipeline processing 47 YouTube transcripts into 300k+ dialogue tokens for PEFT/LoRA fine-tuning</li>
+          <li>Deployed the fine-tuned model on a containerized vLLM inference server with a WebSocket speech-to-speech interface</li>
+        </ul>
+        <div class="arch-grid">
+          <span class="arch-label">Frontend</span><span class="arch-value">React</span>
+          <span class="arch-label">Backend</span><span class="arch-value">FastAPI (Python), modular routes for auth, file handling &amp; inference</span>
+          <span class="arch-label">AI Layer</span><span class="arch-value">QWEN served via vLLM, PEFT fine-tuned on a Gemini-built dialogue dataset</span>
+          <span class="arch-label">Deployment</span><span class="arch-value">vLLM inference server + WebSocket speech-to-speech interface</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">QWEN</span><span class="tag">vLLM</span><span class="tag">React</span>
+        </div>
+        <div class="project-links">
+          <a href="https://senior-design-seven.vercel.app" target="_blank" rel="noopener" class="link-btn">Live Demo →</a>
+          <a href="https://github.com/vkr-vavilla/Senior_Design" target="_blank" rel="noopener" class="link-btn">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Hand Gesture Control</h3>
+          <span class="badge badge-live">Public</span>
+        </div>
+        <p class="project-desc">A real-time, touchless navigation system that maps hand gestures from a webcam feed to system actions — cursor movement, clicks, scrolling, drag, and volume control.</p>
+        <ul class="project-points">
+          <li>Lets a user drive their entire desktop — cursor, clicks, drag, volume, files — with only hand gestures and voice, no mouse or keyboard</li>
+          <li>Real-time computer vision system mapping webcam-tracked hand landmarks (MediaPipe 21-point model) to full OS-level mouse/keyboard control across a multi-monitor desktop</li>
+          <li>Adaptive One Euro Filter and a pinch-hold state machine keep clicks and drags accurate and jitter-free at low latency</li>
+          <li>LLM-backed voice assistant (OpenAI API + SpeechRecognition) for natural-language file commands, with input validation and sandboxed execution to prevent command injection</li>
+        </ul>
+        <div class="arch-grid">
+          <span class="arch-label">Input</span><span class="arch-value">OpenCV webcam capture, processed in real time at 1080p across a multi-monitor desktop</span>
+          <span class="arch-label">Tracking</span><span class="arch-value">MediaPipe hand-landmark detection (21 keypoints per hand)</span>
+          <span class="arch-label">Control</span><span class="arch-value">PyAutoGUI mapping gesture states to OS-level mouse, keyboard &amp; volume events</span>
+          <span class="arch-label">Voice</span><span class="arch-value">OpenAI API + SpeechRecognition, sandboxed execution for file commands</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">MediaPipe</span><span class="tag">OpenCV</span><span class="tag">PyAutoGUI</span><span class="tag">OpenAI API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/soodujjwal/Hand_Control_Gesture" target="_blank" rel="noopener" class="link-btn">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Blood Test Analyser</h3>
+          <span class="badge badge-live">Public</span>
+        </div>
+        <p class="project-desc">A full-stack, AI-driven health platform that takes 40+ blood biomarkers and returns AI-powered interpretations, a personalized nutrition plan, and grocery/recipe suggestions.</p>
+        <ul class="project-points">
+          <li>Turns raw bloodwork into a plain-language health read plus a personalized nutrition plan, grocery list, and recipes — no doctor visit needed to make sense of results</li>
+          <li>React + TypeScript frontend with a Python backend and RESTful API for test submission, AI parsing, and result storage</li>
+          <li>Dynamic nutrition recommendation engine generating personalized grocery lists and recipes from results</li>
+          <li>Pytest suite covering API endpoints, parsing logic, and AI response handling — 100% pass rate</li>
+        </ul>
+        <div class="arch-grid">
+          <span class="arch-label">Frontend</span><span class="arch-value">React + TypeScript, Tailwind CSS</span>
+          <span class="arch-label">Backend</span><span class="arch-value">FastAPI (Python), RESTful API for submission, parsing &amp; storage</span>
+          <span class="arch-label">Database</span><span class="arch-value">MongoDB</span>
+          <span class="arch-label">AI Layer</span><span class="arch-value">OpenAI API (GPT-4o-mini), rule-based fallback when no API key is set</span>
+          <span class="arch-label">Deployment</span><span class="arch-value">Docker &amp; Docker Compose</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Node.js</span>
+          <span class="tag">Python</span><span class="tag">OpenAI API</span><span class="tag">Tailwind CSS</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/soodujjwal/Blood_Test_Analyzer" target="_blank" rel="noopener" class="link-btn">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Reel Maker</h3>
+          <span class="badge badge-live">Live Demo</span>
+        </div>
+        <p class="project-desc">A browser-based highlight-reel generator that picks the best moments from a video using deterministic audio, motion, and scene-change signal analysis — no AI model, no backend, no upload. The video never leaves the browser.</p>
+        <ul class="project-points">
+          <li>Turns a raw 500MB / 5-minute video into a ready-to-share highlight reel in the browser — nothing ever leaves the user's device</li>
+          <li>Deployed to production: analyzes audio energy, motion, and scene changes in-browser using ffmpeg.wasm and the Web Audio API</li>
+          <li>Weighted scoring pipeline ranks the highest-energy moments, letting users tune audio/motion/scene weights and target reel length in real time</li>
+          <li>Automated clip trimming and crossfade stitching via ffmpeg.wasm filter graphs, deployed on Firebase Hosting with CI/CD and cross-origin isolation headers for WASM multithreading</li>
+        </ul>
+        <div class="arch-grid">
+          <span class="arch-label">Frontend</span><span class="arch-value">Vanilla JavaScript (ES modules), Canvas API, Web Audio API, Three.js shader background</span>
+          <span class="arch-label">Backend</span><span class="arch-value">None — 100% client-side, no server, no database</span>
+          <span class="arch-label">Processing</span><span class="arch-value">ffmpeg.wasm (WebAssembly) for decode/encode, deterministic heuristic scoring</span>
+          <span class="arch-label">Deployment</span><span class="arch-value">Firebase Hosting with Cross-Origin-Opener/Embedder-Policy headers</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span><span class="tag">WebAssembly</span><span class="tag">ffmpeg.wasm</span><span class="tag">Web Audio API</span><span class="tag">Canvas API</span><span class="tag">Three.js</span><span class="tag">Firebase</span>
+        </div>
+        <div class="project-links">
+          <a href="https://reelmaker-14144.web.app/" target="_blank" rel="noopener" class="link-btn">Live Demo →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>UTA Parking Permit Map</h3>
+          <span class="badge badge-private">Private · In Development</span>
+        </div>
+        <p class="project-desc">A hybrid React + Express app that visualizes campus parking lots, permit layers, and live occupancy from Mistall sensors, with manager editing tools and a Gemini-powered chatbot that can make map adjustments through natural language.</p>
+        <ul class="project-points">
+          <li>Gives campus parking managers a live, editable map of every lot's permit status and real-time occupancy — with a chatbot that can make edits in plain English</li>
+          <li>Custom tile-based map renderer that projects lat/lng to world coordinates and draws OSM tiles with polygon overlays, supporting pointer and pinch gestures</li>
+          <li>Server-side caching layer for Mistall zone data, converting sensor readings into per-lot occupancy updates with automatic stale-cache fallback</li>
+          <li>Gemini-backed chatbot that parses structured action tags from its responses to drive map edits like permit changes, renames, and zoom-to actions</li>
+        </ul>
+        <div class="arch-grid">
+          <span class="arch-label">Frontend</span><span class="arch-value">React + Vite, custom tile-based map renderer</span>
+          <span class="arch-label">Backend</span><span class="arch-value">Express (tsx dev server + Vite middleware), REST API for map state, occupancy &amp; chat</span>
+          <span class="arch-label">AI Layer</span><span class="arch-value">Gemini API (@google/genai) for the map-editing assistant</span>
+          <span class="arch-label">Data</span><span class="arch-value">Mistall sensor API for live occupancy, config-driven zone-to-lot mapping</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">Express</span><span class="tag">Gemini API</span>
+        </div>
+        <div class="project-links">
+          <span class="link-disabled">Repository private — in development</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>UTA Event Parking Planner</h3>
+          <span class="badge badge-private">Private · Internal Tool</span>
+        </div>
+        <p class="project-desc">A browser-based event parking operations tool built for UT Arlington Parking &amp; Transportation Services that combines event scheduling, campus parking selection, guest navigation, permit instructions, accessibility guidance, and printable event materials into one workflow.</p>
+        <ul class="project-points">
+          <li>Built an interactive event-planning workflow that lets staff select multiple parking locations, set an exact campus destination, calculate walking-time ranges, configure permit hours, and generate a 3-page guest parking packet</li>
+          <li>Designed an accessible parking-availability system using color, texture, and text, with dynamic Easy, Moderate, Hard, and No Data states, keyboard-friendly controls, and print-safe layouts</li>
+          <li>Added operational tools for CSV/ICS event imports, weekly event management, persistent browser storage, Outlook-compatible calendar exports, and dynamically generated guest emails using live event and parking data</li>
+        </ul>
+        <div class="arch-grid">
+          <span class="arch-label">Frontend</span><span class="arch-value">HTML5 + CSS3 + Vanilla JavaScript, interactive campus map, responsive manager interface, print-specific layouts</span>
+          <span class="arch-label">Event Data</span><span class="arch-value">CSV/ICS parsing, browser LocalStorage, weekly event filtering, persistent event management</span>
+          <span class="arch-label">Automation</span><span class="arch-value">Dynamic parking maps, walking-time estimates, permit instructions, guest email generation, Outlook .ics export</span>
+          <span class="arch-label">Accessibility</span><span class="arch-value">Color + texture parking states, keyboard interaction, semantic form controls, high-contrast print design</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">CSV/ICS</span><span class="tag">LocalStorage</span><span class="tag">Accessibility</span><span class="tag">Print CSS</span>
+        </div>
+        <div class="project-links">
+          <span class="link-disabled">Repository private — internal UTA tool</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <p class="section-tag">04 / Experience</p>
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Full-Stack Developer</h3>
+            <span class="timeline-date">May 2026 – Present</span>
+            
+          </div>
+          <p class="timeline-org">UTA Parking &amp; Transportation Services · Arlington, TX</p>
+          <ul class="project-points">
+            <li>Accomplished 98.3% faster event-parking planning as measured by reducing PCO processing from 120 minutes to 2 minutes, by engineering an internal planner with interactive maps, accessibility states, CSV/ICS imports, Outlook exports, and automated guest packets and emails.</li>
+            <li>Accomplished campus-wide parking discovery as measured by 60 mapped lots across 6 eligibility modes, by building a live permit navigator with arrival-time filtering, destination search, shuttle support, and normal or satellite map views.</li>
+            <li>Accomplished occupancy-informed parking decisions as measured by 3 live factors: permit, location, and occupancy, by integrating Mistall sensor and camera data with configurable lot mappings, stale-cache fallback, and interactive permit layers.</li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <p class="section-tag">05 / Education</p>
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>BS in Computer Science</h3>
+            <span class="timeline-date">Expected Graduation: Dec 2026</span>
+          </div>
+          <p class="timeline-org">University of Texas at Arlington</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="involvement" class="section">
+    <p class="section-tag">06 / Involvement</p>
+    <h2 class="section-title">Clubs &amp; Organizations</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Students in Computing and Artificial Intelligence</h3>
+          </div>
+          <p class="timeline-org">University of Texas at Arlington</p>
+          <ul class="project-points">
+            <li>Built and presented AI project demos to an audience of 50+ students and faculty at department hackathons and guest lecture events</li>
+            <li>Contributed to organizing AI-focused seminars and workshops to drive student participation in emerging technology trends</li>
+            <li>Collaborated with peers on cross-functional teams to plan and execute technical events aligned with industry advancements</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies" class="section">
+    <p class="section-tag">07 / Beyond Code</p>
+    <h2 class="section-title">Hobbies &amp; Interests</h2>
+    <div class="hobby-grid">
+      <div class="hobby-card"><span class="hobby-emoji">♟️</span><span>Chess</span></div>
+      <div class="hobby-card"><span class="hobby-emoji">🏋️</span><span>Fitness</span></div>
+      <div class="hobby-card"><span class="hobby-emoji">📸</span><span>Photography</span></div>
+      <div class="hobby-card"><span class="hobby-emoji">🛠️</span><span>Building Side Projects</span></div>
+      <div class="hobby-card"><span class="hobby-emoji">⚡</span><span>Hackathons</span></div>
+      <div class="hobby-card"><span class="hobby-emoji">🧠</span><span>Learning New AI Models</span></div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <p class="section-tag">08 / Skills</p>
+    <h2 class="section-title">Skills &amp; Tools</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <div class="tag-row"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">Java</span><span class="tag">C/C++</span><span class="tag">SQL</span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Frontend</h4>
+        <div class="tag-row"><span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Tailwind CSS</span><span class="tag">HTML/CSS</span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Backend</h4>
+        <div class="tag-row"><span class="tag">Node.js</span><span class="tag">FastAPI</span><span class="tag">REST APIs</span><span class="tag">Flask</span><span class="tag">JWT</span><span class="tag">LDAP</span><span class="tag">Microservices</span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Cloud &amp; DevOps</h4>
+        <div class="tag-row"><span class="tag">Azure</span><span class="tag">Vercel</span><span class="tag">AWS (EC2, S3)</span><span class="tag">Firebase</span><span class="tag">Docker</span><span class="tag">Git</span><span class="tag">CI/CD (GitHub Actions)</span><span class="tag">Linux</span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Data &amp; AI/ML</h4>
+        <div class="tag-row"><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Power BI</span><span class="tag">scikit-learn</span><span class="tag">OpenAI API</span><span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">PEFT/LoRA</span><span class="tag">vLLM</span><span class="tag">QWEN</span><span class="tag">NLP</span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Practices</h4>
+        <div class="tag-row"><span class="tag">Agile/Scrum</span><span class="tag">Unit &amp; Integration Testing (Pytest)</span><span class="tag">System Design</span><span class="tag">OOP</span><span class="tag">Prompt Engineering</span></div>
+      </div>
+      <div class="skill-group">
+        <h4>Tools</h4>
+        <div class="tag-row"><span class="tag">Jira</span><span class="tag">Figma</span><span class="tag">Notion</span><span class="tag">VS Code</span></div>
+      </div>
+    </div>
+
+    <div class="cert-row">
+      <h4>Certifications</h4>
+      <div class="tag-row">
+        <span class="tag tag-cert">Python Programming Fundamentals — Microsoft</span>
+        <span class="tag tag-cert">Artificial Intelligence Essentials V2 — IBM</span>
+        <span class="tag tag-cert">Introduction to Mobile App Development — IBM</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <p class="section-tag">09 / Contact</p>
+    <h2 class="section-title">Let's Work Together</h2>
+    <p class="contact-sub">Open to internship and new-grad software engineering roles. Reach out — I usually reply within a day.</p>
+    <div class="contact-cards">
+      <a href="mailto:ujjwalsood96@gmail.com" class="contact-card">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">Send me a message</span>
+      </a>
+      <a href="https://github.com/soodujjwal" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">View my repositories</span>
+      </a>
+      <a href="https://www.linkedin.com/in/ujjwal-sood-4b608022b/" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">Connect with me</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="https://github.com/soodujjwal" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/ujjwal-sood-4b608022b/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:ujjwalsood96@gmail.com">Email</a>
+    <a href="#home">Back to top</a>
+  </div>
+  <p>&copy; <span id="year"></span> Ujjwal Sood. Built with HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<script src="script.js"></script>
+<script type="module" src="firebase-init.js"></script>
+</body>
+</html>

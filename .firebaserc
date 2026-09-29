@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "portfolio-ea5b2"
+  },
+  "targets": {
+    "portfolio-ea5b2": {
+      "hosting": {
+        "portfolio": [
+          "ujjwalsood"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

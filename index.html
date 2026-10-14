@@ -136,6 +136,58 @@
         </div>
       </article>
 
+      <article class="project-card featured">
+        <div class="project-head">
+          <h3>Personal Finance Manager</h3>
+          <span class="badge badge-live">Public · Team Project</span>
+        </div>
+        <p class="project-desc">A full-stack personal finance platform for managing accounts, transactions, budgets, savings goals, recurring bills, reports, transfers, purchase affordability, and shared expenses from one responsive interface.</p>
+        <ul class="project-points">
+          <li>Built a React + TypeScript client and layered FastAPI backend with JWT authentication, validated REST APIs, SQLAlchemy persistence, and computed financial summaries</li>
+          <li>Integrated Plaid Link with server-side credential handling, encrypted access-token storage, incremental transaction sync, duplicate-safe imports, signed webhooks, and manual refresh controls</li>
+          <li>Implemented browser-based Tesseract.js receipt OCR and deterministic Split Bill calculations, including exact cent allocation, proportional tax and tip, idempotent payment recording, and editable repayments</li>
+          <li>Added transfer safeguards, budget alerts, recurring-payment matching, savings projections, monthly reports, and cash-versus-financing-versus-leasing affordability analysis</li>
+        </ul>
+        <div class="arch-grid">
+          <span class="arch-label">Frontend</span><span class="arch-value">React 19 + TypeScript + Vite, responsive light/dark UI and reusable component system</span>
+          <span class="arch-label">Backend</span><span class="arch-value">FastAPI, layered routes/services/domain/repositories, Pydantic validation and JWT-protected endpoints</span>
+          <span class="arch-label">Data</span><span class="arch-value">SQLAlchemy + SQLite with financial ledgers, cent-precise calculations and startup compatibility migrations</span>
+          <span class="arch-label">Integrations</span><span class="arch-value">Plaid bank synchronization, signed webhooks and in-browser Tesseract.js receipt OCR</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">Plaid</span><span class="tag">Tesseract.js</span><span class="tag">Pytest</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/soodujjwal/Team_6_Object_Oriented_Software" target="_blank" rel="noopener" class="link-btn">View on GitHub →</a>
+        </div>
+      </article>
+
+      <article class="project-card featured">
+        <div class="project-head">
+          <h3>UTA Fleet Rental &amp; Inspection Platform</h3>
+          <span class="badge badge-private">Private · Internal UTA Tool</span>
+        </div>
+        <p class="project-desc">A mobile-first operations platform for managing UTA van, SUV, and golf-cart rentals from reservation intake through pickup, return inspection, billing, reporting, and archival.</p>
+        <ul class="project-points">
+          <li>Built responsive manager and renter workflows for fleet records, bookings, time-gated pickup and return inspections, optional photo evidence, signatures, approvals, payment tracking, and downloadable booking packages</li>
+          <li>Secured manager operations with Microsoft Entra ID role assignment and object-ID allowlisting at both the Azure route and API layers, plus HMAC-indexed renter PINs and signed, HttpOnly, same-site sessions</li>
+          <li>Automated reservation intake with SharePoint CSV parsing, resource-to-fleet matching, date filtering, duplicate protection, and PDF request extraction, while preserving manager review for vehicle assignment</li>
+          <li>Implemented configurable mileage, cleaning, and surcharge rules; excluded optional cleaning fees from surcharge calculations; and generated styled Excel reports from private Azure Blob records</li>
+        </ul>
+        <div class="arch-grid">
+          <span class="arch-label">Frontend</span><span class="arch-value">React 19 + TypeScript + Vite, responsive dashboards, mobile inspection flows, image preparation and signature capture</span>
+          <span class="arch-label">Backend</span><span class="arch-value">Azure Functions v4, Zod-validated APIs, optimistic eTag writes, HMAC access indexes and server-enforced booking state transitions</span>
+          <span class="arch-label">Cloud &amp; Security</span><span class="arch-value">Azure Static Web Apps, Microsoft Entra ID, private Azure Blob Storage, Key Vault references, Application Insights and Bicep infrastructure</span>
+          <span class="arch-label">Delivery</span><span class="arch-value">Vitest coverage for pricing, fleet seeding, imports and repository behavior; GitHub Actions with OIDC-based Azure deployment</span>
+        </div>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Azure Functions</span><span class="tag">Entra ID</span><span class="tag">Azure Blob Storage</span><span class="tag">Bicep</span><span class="tag">Vitest</span>
+        </div>
+        <div class="project-links">
+          <span class="link-disabled">Authenticated internal application</span>
+        </div>
+      </article>
+
       <article class="project-card">
         <div class="project-head">
           <h3>Hand Gesture Control</h3>
@@ -218,27 +270,28 @@
 
       <article class="project-card">
         <div class="project-head">
-          <h3>UTA Parking Permit Map</h3>
-          <span class="badge badge-private">Private · In Development</span>
+          <h3>UTA Parking Finder &amp; Management Platform</h3>
+          <span class="badge badge-live">Live App · Private Repository</span>
         </div>
-        <p class="project-desc">A hybrid React + Express app that visualizes campus parking lots, permit layers, and live occupancy from Mistall sensors, with manager editing tools and a Gemini-powered chatbot that can make map adjustments through natural language.</p>
+        <p class="project-desc">A campus parking platform that helps students, residents, employees, and visitors find eligible parking based on their permit, destination, and arrival time. The public map covers 60 lots and combines live Mistall sensor occupancy with parking estimates, walking times, shuttle information, and turn-by-turn navigation links.</p>
         <ul class="project-points">
-          <li>Gives campus parking managers a live, editable map of every lot's permit status and real-time occupancy — with a chatbot that can make edits in plain English</li>
-          <li>Custom tile-based map renderer that projects lat/lng to world coordinates and draws OSM tiles with polygon overlays, supporting pointer and pinch gestures</li>
-          <li>Server-side caching layer for Mistall zone data, converting sensor readings into per-lot occupancy updates with automatic stale-cache fallback</li>
-          <li>Gemini-backed chatbot that parses structured action tags from its responses to drive map edits like permit changes, renames, and zoom-to actions</li>
+          <li>Built a permit-aware discovery experience across 60 campus lots with destination search, arrival-time filtering, walking-time estimates, shuttle details, and external navigation</li>
+          <li>Integrated live Mistall parking-sensor data through configurable zone-to-lot mappings, server-side caching, occupancy estimates, multiple data sources, and stale-data fallback</li>
+          <li>Developed a separate manager interface for editing lot polygons, permit eligibility, timed access rules, occupancy overrides, visitor payment details, and map content</li>
+          <li>Implemented draft and publish workflows through a shared map-state API, plus JSON import/export, CSV downloads, documentation tools, and backup recovery</li>
         </ul>
         <div class="arch-grid">
-          <span class="arch-label">Frontend</span><span class="arch-value">React + Vite, custom tile-based map renderer</span>
-          <span class="arch-label">Backend</span><span class="arch-value">Express (tsx dev server + Vite middleware), REST API for map state, occupancy &amp; chat</span>
-          <span class="arch-label">AI Layer</span><span class="arch-value">Gemini API (@google/genai) for the map-editing assistant</span>
-          <span class="arch-label">Data</span><span class="arch-value">Mistall sensor API for live occupancy, config-driven zone-to-lot mapping</span>
+          <span class="arch-label">Frontend</span><span class="arch-value">React + TypeScript + Vite with a custom tile-based campus map, polygon overlays, and responsive public/manager interfaces</span>
+          <span class="arch-label">Backend</span><span class="arch-value">Express REST APIs for shared map state, publishing, occupancy aggregation, imports, exports, and recovery</span>
+          <span class="arch-label">Live Data</span><span class="arch-value">Mistall sensor feeds mapped to individual parking lots with caching, periodic refresh, estimates, and fallback handling</span>
+          <span class="arch-label">Operations</span><span class="arch-value">Time-dependent permit rules, draft/publish controls, overrides, backups, CSV/JSON tooling, and visitor parking configuration</span>
         </div>
         <div class="tag-row">
-          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">Express</span><span class="tag">Gemini API</span>
+          <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Vite</span><span class="tag">Express</span><span class="tag">REST API</span><span class="tag">Mistall Sensors</span><span class="tag">Geospatial UI</span>
         </div>
         <div class="project-links">
-          <span class="link-disabled">Repository private — in development</span>
+          <a href="https://uta-parking-finder.onrender.com/" target="_blank" rel="noopener" class="link-btn">Live App →</a>
+          <span class="link-disabled">Repository private</span>
         </div>
       </article>
 
